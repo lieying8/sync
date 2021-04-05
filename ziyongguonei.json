@@ -1,0 +1,29 @@
+#orz-3大佬汇总以下大佬：nobyda大佬、peng-ym大佬、chavyleung大佬、id77大佬、sunert大佬
+
+#京东多合一、爱奇艺、GitHub更新、中国联通、中国移动、bilibili、威锋、qq音乐、腾讯讯视频、WPS、喜马拉雅、京东物流、微博、
+
+{
+    "name": "Shang",
+    "description": "https://github.com/NobyDa/Script/tree/master",
+    "task": [
+
+        "1,3 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true", 
+        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/iQIYI.png, enabled=true",
+
+        "2 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/Peng-YM/QuanX/master/Tasks/github.js, tag=GitHub, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/github.png, enabled=true",
+
+        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/10010/10010.js, tag=中国联通, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/10010.png, enabled=true",
+        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/10086/10086.js, tag=中国移动, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/10086.png, enabled=true",
+        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png, enabled=true",
+        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.js, tag=威锋网, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/feng.png, enabled=true",
+        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/qqmusic/qqmusic.js, tag=QQ音乐, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/qqmusic.png, enabled=true",
+        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js, tag=腾讯视频, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/videoqq.png, enabled=true",
+        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js, tag=WPS, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/wps.png, enabled=true",
+        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js, tag=喜马拉雅, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/ximalaya.png, enabled=true",
+        
+        "10 12,18 * * * https://ghproxy.com/https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js, tag=京东物流派件提醒, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+        
+        "0 1 * * * https://ghproxy.com/https://raw.githubusercontent.com/Sunert/Scripts/master/Task/weibo.js, tag=微博, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/weibo.png, enabled=true",
+
+    ]
+}
