@@ -4,13 +4,13 @@
     "task": [
         "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/JD-DailyBonus/JD_DailyBonus.js, tag=京东, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
         "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js, tag=爱奇艺, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/iQIYI.png, enabled=true",
-        "20 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_signin.js, tag=联通_签到与抽奖, enabled=true",
+        "25 11 * * * https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/10010/unicom_signin.js, tag=联通_签到与抽奖, enabled=true",
         "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.js, tag=bilibili, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/bilibili.png, enabled=true",
         "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.js, tag=威锋网, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/feng.png, enabled=true",
         "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/videoqq/videoqq.js, tag=腾讯视频, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/videoqq.png, enabled=true",
         "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/wps/wps.js, tag=WPS, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/wps.png, enabled=true",
         "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/chavyleung/scripts/master/ximalaya/ximalaya.js, tag=喜马拉雅, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/ximalaya.png, enabled=true",
-        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js, tag=京东物流派件提醒, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
-        "3 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js, tag=贴吧_每日签到, enabled=true",
+        "1 12,18 * * * https://ghproxy.com/https://raw.githubusercontent.com/id77/QuantumultX/master/task/jdWuLiu.js, tag=京东物流派件提醒, img-url=https://ghproxy.com/https://raw.githubusercontent.com/Orz-3/mini/master/Color/jd.png, enabled=true",
+        "1 0 * * * https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/tieba/tieba_checkin.js, tag=贴吧_每日签到, enabled=true",
     ]
 }
