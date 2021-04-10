@@ -1,5 +1,6 @@
 # 目录
 ## 关注的人及主要贡献：
+[evilbutcher](https://github.com/evilbutcher?tab=repositories)：包含scriptable、quantumultx、taio、jsbox等众多软件脚本
 
 [DivineEngine](https://github.com/DivineEngine)：神机规则
 
