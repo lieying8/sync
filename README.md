@@ -1,8 +1,16 @@
 # 目录
 ## 关注的人及主要贡献：
+[pm936](https://github.com/pm936/httpcatcher)：http catcher网球规则
+
 [2ya](https://github.com/dompling/Scriptable):2ya的scriptable
 
 [evilbutcher](https://github.com/evilbutcher?tab=repositories)：包含scriptable、quantumultx、taio、jsbox等众多软件脚本
+
+[w37fhy](https://github.com/w37fhy/QuantumultX)：大飞quantumultx 同步更新大佬脚本
+
+[lhie1](https://github.com/lhie1/Rules/tree/master)：quantumultx 分流规则去广告
+
+[Nobyda](https://github.com/NobyDa/Script/tree/master)：quantumultx 脚本
 
 [DivineEngine](https://github.com/DivineEngine)：神机规则
 
@@ -32,17 +40,11 @@
 
 [forevergooe](https://github.com/forevergooe/Profiles)：quantumult、shadowsocker规则分为标准版、专业版和回国版
 
-[coolsnowwolf](https://github.com/coolsnowwolf/lede)：l大openwrt固件
+[coolsnowwolf](https://github.com/coolsnowwolf/lede)：L大openwrt固件
 
 [1715173329](https://github.com/1715173329/nanopi-r2s-openwrt)：r2s强大固件
 
-[pm936](https://github.com/pm936/httpcatcher)：http catcher网球规则
-
-[lhie1](https://github.com/lhie1/Rules/tree/master)：quantumultx 分流规则去广告
-
-[Nobyda](https://github.com/NobyDa/Script/tree/master)：quantumultx 脚本
-
-[w37fhy](https://github.com/w37fhy/QuantumultX)：大飞quantumultx 同步更新大佬脚本
+[tartarus2014](https://github.com/Tartarus2014)：quantumultx脚本、shadowsocker脚本
 
 ## fork项目
 - 定时拉取github上各作者的脚本备份 https://github.com/lieying8/AutoSyncScript
