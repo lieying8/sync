@@ -1,5 +1,7 @@
 # 目录
 ## 关注的人及主要贡献：
+[semporia](https://github.com/Semporia)：解锁Tik Tok原创、scrip、clash等
+
 [pm936](https://github.com/pm936/httpcatcher)：http catcher网球规则
 
 [2ya](https://github.com/dompling/Scriptable):2ya的scriptable
