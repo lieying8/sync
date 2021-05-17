@@ -1,5 +1,7 @@
 # 目录
 ## 关注的人及主要贡献：
+[少年歌行sngxpro](https://github.com/sngxpro)：圈x脚本
+
 [limbopro](https://github.com/limbopro)：圈x策略、规则、重写
 
 [semporia](https://github.com/Semporia)：解锁Tik Tok原创、scrip、clash等
