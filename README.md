@@ -54,6 +54,7 @@
 
 ## fork项目
 - 定时拉取github上各作者的脚本备份 https://github.com/lieying8/AutoSyncScript
+- wulabing v2ray搭建  https://github.com/lieying8/V2Ray_ws-tls_bash_onekey
 - 自用quantumultx配置 https://github.com/lieying8/sync
 - blackmatrix7大佬的quantumultx脚本 https://github.com/lieying8/ios_rule_script 
 - orz-3大佬的quantumultx配置文件 https://github.com/lieying8/QuantumultX 
