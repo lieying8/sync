@@ -2,7 +2,7 @@
 ## 关注的人及主要贡献：
 [彭于晏](https://github.com/89996462)：圈x脚本，破解IPA
 
-~~[少年歌行sngxpro](https://github.com/sngxpro)：圈x脚本
+~~[少年歌行sngxpro](https://github.com/sngxpro)：圈x脚本~~
 
 [limbopro](https://github.com/limbopro)：圈x策略、规则、重写
 
