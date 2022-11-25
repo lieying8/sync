@@ -97,5 +97,3 @@ chavy.done()
 X185.199.108.133
 美国 GitHub+Fastly节点
 
-[task_local]
-1 0 * * * https://raw.githubusercontent.com/lieying8/sync/main/10010cookie.js
