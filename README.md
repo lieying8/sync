@@ -55,16 +55,10 @@
 [tartarus2014](https://github.com/Tartarus2014)：quantumultx脚本、shadowsocker脚本
 
 ## fork项目
-- 定时拉取github上各作者的脚本备份 https://github.com/lieying8/AutoSyncScript
-- wulabing v2ray搭建  https://github.com/lieying8/V2Ray_ws-tls_bash_onekey
 - 自用quantumultx配置 https://github.com/lieying8/sync
-- blackmatrix7大佬的quantumultx脚本 https://github.com/lieying8/ios_rule_script 
-- orz-3大佬的quantumultx配置文件 https://github.com/lieying8/QuantumultX 
-- Mac电脑下的开源剪贴板 https://github.com/lieying8/Clipy 
-- openwrt固件镜像文件自动获取 https://github.com/lieying8/My-action 
-- 利用FFmpeg下载mp4格式爱奇艺视频 https://github.com/lieying8/webvideo-downloader 
-- 阿里云ossfs挂载 https://github.com/lieying8/ossfs 
-- nzw9314大佬同步更新其他大佬的quantumultx脚本 https://github.com/lieying8/nzw9314 
+- blackmatrix7大佬的quantumultx规则、重写 https://github.com/lieying8/ios_rule_script 
+- orz-3大佬的quantumultx配置文件 https://github.com/lieying8/QuantumultX
+- erdongchanyo整理的一些规则  https://github.com/lieying8/Rules  
 - readme语法 https://github.com/lieying8/README 
 - Excel中文转拼音，便于查重 https://github.com/lieying8/CH_TO_PY 
 
