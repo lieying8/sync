@@ -27,6 +27,7 @@ jobs:
         git config --global user.name 'lieying8'
         git config --global user.email 'qq504971271@gmail.com'
         git add vv.txt
+        git pull --rebase origin main
         git diff --quiet && git diff --staged --quiet || git commit -m 'Updated data'
         git push
 
