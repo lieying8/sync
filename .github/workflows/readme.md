@@ -1,1 +1,2 @@
-
+- [项目地址:](https://raw.githubusercontent.com/freefq/free/master/v2) https://raw.githubusercontent.com/freefq/free/master/v2
+- GPT教练
