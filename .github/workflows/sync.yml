@@ -1,8 +1,7 @@
 name: Web Scraping
 
 on: 
-  schedule:
-    - cron: '0 0 * * *' # 每天0点运行
+  workflow_dispatch:
 
 jobs:
   build:
