@@ -21,7 +21,7 @@ jobs:
         python -m pip install --upgrade pip
         pip install requests
     - name: Run script
-      run: python .github/workflows/sync.py
+      run: python .github/workflows/sync1.py
     - name: Commit and push if it changed
       run: |
         git config --global user.name 'lieying8'
