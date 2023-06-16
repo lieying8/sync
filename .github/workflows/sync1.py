@@ -1,7 +1,7 @@
 # your_script.py
 import requests
 
-response = requests.get('https://raw.githubusercontent.com/freefq/free/master/v2')
+response = requests.get('http://file.966a.cn/')
 html_content = response.text
 
 with open('.github/workflows/vvv.txt', 'w') as f:
