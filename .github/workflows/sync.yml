@@ -22,7 +22,7 @@ jobs:
       run: |
         git config --global user.name 'lieying8'
         git config --global user.email 'qq504971271@gmail.com'
-        git add index.html
+        git add .github/workflows/vv.txt
         git diff --quiet && git diff --staged --quiet || git commit -m 'Updated data'
         git push
 
