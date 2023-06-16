@@ -1,7 +1,7 @@
 # your_script.py
 import requests
 
-response = requests.get('https://raw.fastgit.org/freefq/free/master/v2')
+response = requests.get('https://raw.githubusercontent.com/freefq/free/master/v2')
 html_content = response.text
 
 with open('vv.txt', 'w') as f:
