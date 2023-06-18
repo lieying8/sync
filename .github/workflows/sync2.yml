@@ -1,4 +1,4 @@
-name: Web Scraping
+name: sync2
 
 on: 
   schedule:
