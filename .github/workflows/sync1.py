@@ -1,4 +1,5 @@
-# https://github.com/freefq/free  https://raw.fastgit.org/freefq/free/master/v2
+# https://github.com/freefq/free  
+# https://raw.fastgit.org/freefq/free/master/v2
 import requests
 
 response = requests.get('https://raw.fastgit.org/freefq/free/master/v2')
