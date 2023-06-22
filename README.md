@@ -66,6 +66,9 @@
 - Excel中文转拼音，便于查重 https://github.com/lieying8/CH_TO_PY 
 
 ## 备用
-- [github代理](https://ghproxy.com/)
-- [永久免费FRP](https://freefrp.net/)
+| [github代理](https://ghproxy.com/) | [永久免费FRP](https://freefrp.net/) |
+|---|---|
+
+![](https://raw.githubusercontent.com/lieying8/sync/main/draw.io/test.svg)
+
 
