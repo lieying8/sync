@@ -7,6 +7,7 @@
   - [关注的人及主要贡献](#关注的人及主要贡献)
   - [fork项目](#fork项目)
   - [备用](#备用)
+  - [💰感谢捐赠](#感谢捐赠)
 
 ## 关注的人及主要贡献 
 [彭于晏](https://github.com/89996462)：圈x脚本，破解IPA
@@ -89,5 +90,20 @@
   <a href="#top-of-document">⬆️回到目录</a>
 </p>
 
+## 感谢捐赠
+
+留下你的捐赠信息，将来也许有惊喜，永远相信美好的事情即将发生！
+
+- BTC地址：12mnJ26X3oU6M6fzM4XygHPgrzfvupcTG2
+- ETH地址：0xEB1b9e58B62eAb25999e6a04490870A60338E8
+- USDT-TRC20地址：TTm2ow5My8SgFoSBT71FW6RFkQAEURjDW5
+  
+| [![](https://raw.githubusercontent.com/lieying8/sync/main/icon/btc.png)](https://raw.githubusercontent.com/lieying8/sync/main/icon/btc.png) | [![](https://raw.githubusercontent.com/lieying8/sync/main/icon/eth.png)](https://raw.githubusercontent.com/lieying8/sync/main/icon/eth.png) | [![](https://raw.githubusercontent.com/lieying8/sync/main/icon/usdt.png)](https://raw.githubusercontent.com/lieying8/sync/main/icon/usdt.png) |
+|:--:|:--:|:---:|
+
+
+<p align="right">
+  <a href="#top-of-document">⬆️回到目录</a>
+</p>
 
 
