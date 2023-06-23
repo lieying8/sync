@@ -1,11 +1,12 @@
 | [![stars](https://img.shields.io/github/stars/lieying8/sync)](https://github.com/lieying8/sync/stargazers) | [![last-commit](https://img.shields.io/github/last-commit/lieying8/sync)](https://github.com/lieying8/sync) |
 |:--:|:--:|
+<a name="top-of-document"></a>
 # 目录
   - [关注的人及主要贡献](#关注的人及主要贡献)
   - [fork项目](#fork项目)
   - [备用](#备用)
 
-## 关注的人及主要贡献
+## 关注的人及主要贡献 
 [彭于晏](https://github.com/89996462)：圈x脚本，破解IPA
 
 ~~[少年歌行sngxpro](https://github.com/sngxpro)：圈x脚本~~
@@ -60,18 +61,31 @@
 
 [tartarus2014](https://github.com/Tartarus2014)：quantumultx脚本、shadowsocker脚本
 
+<p align="right">
+  <a href="#top-of-document">⬆️回到目录</a>
+</p>
+
 ## fork项目
 - 自用quantumultx配置 https://github.com/lieying8/sync
 - blackmatrix7大佬的quantumultx规则、重写 https://github.com/lieying8/ios_rule_script 
 - orz-3大佬的quantumultx配置文件 https://github.com/lieying8/QuantumultX
 - erdongchanyo整理的一些规则  https://github.com/lieying8/Rules  
 - readme语法 https://github.com/lieying8/README 
-- Excel中文转拼音，便于查重 https://github.com/lieying8/CH_TO_PY 
+- Excel中文转拼音，便于查重 https://github.com/lieying8/CH_TO_PY
+
+<p align="right">
+  <a href="#top-of-document">⬆️回到目录</a>
+</p>
 
 ## 备用
 | [github代理](https://ghproxy.com/) | [永久免费FRP](https://freefrp.net/) |
 |---|---|
 
 ![](https://raw.githubusercontent.com/lieying8/sync/main/draw.io/test.svg)
+
+<p align="right">
+  <a href="#top-of-document">⬆️回到目录</a>
+</p>
+
 
 
