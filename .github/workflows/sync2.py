@@ -2,7 +2,7 @@
 import requests
 
 # 请求A网站的内容
-response = requests.get('https://raw.fastgit.org/freefq/free/master/v2')
+response = requests.get('https://raw.githubusercontent.com/freefq/free/master/v2')
 html_content = response.text
 
 # 创建一个保存到B网站的链接，使用WebDAV
