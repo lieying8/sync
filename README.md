@@ -81,8 +81,8 @@
 </p>
 
 ## 备用
-| [github代理](https://ghproxy.com/) | [永久免费FRP](https://freefrp.net/) |
-|---|---|
+| [github代理](https://ghproxy.com/) | [永久免费FRP](https://freefrp.net/) | [star](https://docs.qq.com/sheet/DWXZZbndlQ0J4R0xt?tab=BB08J2)
+|---|---|---|
 
 
 
