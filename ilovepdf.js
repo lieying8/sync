@@ -1,3 +1,14 @@
+/*  解锁iLovePDF高级账户 需要登陆
+测试版本v3.1.2
+@Marol62926
+
+
+[rewrite_local]
+^https://service.ilovepdf.com/v1/user url script-response-body https://raw.githubusercontent.com/lieying8/sync/main/ilovepdf.js
+[mitm]
+hostname = hostname = service.ilovepdf.com
+*/
+
 var body = $response.body;
 var obj = JSON.parse(body);
 
