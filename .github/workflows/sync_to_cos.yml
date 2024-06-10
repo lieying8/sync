@@ -28,4 +28,4 @@ jobs:
           TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
           TENCENT_REGION: ${{ secrets.TENCENT_REGION }}
           TENCENT_BUCKET: ${{ secrets.TENCENT_BUCKET }}
-        run: python sync_to_cos.py
+        run: python .github/workflows/sync_to_cos.py
