@@ -78,7 +78,7 @@ for folder, links in file_links.items():
     for link in links:
         try:
             # 使用部分链接路径作为文件名
-            file_name = link.replace("https://", "").replace("/", "_")
+            file_name = link.replace("https://", "https_").replace("/", "_")
             file_path = os.path.join(folder, file_name)
             print(f"Downloading {link} to {file_path}")
             response = requests.get(link)
