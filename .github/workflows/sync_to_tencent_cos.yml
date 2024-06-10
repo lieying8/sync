@@ -1,0 +1,35 @@
+name: Sync to Tencent COS
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # 每天午夜运行一次，你可以根据需要调整时间
+  push:
+    branches:
+      - main  # 当代码推送到main分支时运行
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Python
+      uses: actions/setup-python@v2
+      with:
+        python-version: '3.x'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install cos-python-sdk-v5 requests
+
+    - name: Download files and sync to Tencent COS
+      env:
+        TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+        TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}
+        TENCENT_REGION: ${{ secrets.TENCENT_REGION }}
+        TENCENT_BUCKET: ${{ secrets.TENCENT_BUCKET }}
+      run: |
+        python sync_to_cos.py
