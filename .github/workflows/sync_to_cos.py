@@ -22,15 +22,44 @@ file_links = {
     "filter_remote": [
         "https://raw.githubusercontent.com/Cats-Team/AdRules/main/qx.conf",
         "https://raw.githubusercontent.com/RuCu6/QuanX/main/Rules/MyBlockAds.list",
-        # 省略其他链接...
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Advertising/Advertising.list",
+        "https://raw.githubusercontent.com/NobyDa/Script/master/Surge/AdRule.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/AdGuardSDNSFilter/AdGuardSDNSFilter.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Hijacking/Hijacking.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Privacy/Privacy.list",
+        "https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/ProxyGFWlist.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Global/Global.list",
+        "https://raw.githubusercontent.com/VirgilClyne/GetSomeFries/main/ruleset/ASN.China.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/China/China.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/WeChat/WeChat.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/OpenAI/OpenAI.list",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/QuantumultX/Apple/Apple.list"
     ],
     "rewrite_remote": [
         "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/zheye/zheye.snippet",
-        # 省略其他链接...
+        "https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/Applet.conf",
+        "https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/YoutubeAds.conf",
+        "https://raw.githubusercontent.com/fmz200/wool_scripts/main/QuantumultX/rewrite/chongxie.txt",
+        "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/Advertising/Advertising.conf",
+        "https://raw.githubusercontent.com/ddgksf2013/Rewrite/master/AdBlock/XiaoHongShu.conf",
+        "https://raw.githubusercontent.com/zZPiglet/Task/master/UnblockURLinWeChat.conf",
+        "https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf",
+        "https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/cubox.js",
+        "https://raw.githubusercontent.com/lieying8/sync/main/lw2.js",
+        "https://raw.githubusercontent.com/lieying8/sync/main/lw.js",
+        "https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/smqnw.js",
+        "https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/Notability.js",
+        "https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/bdwk.js",
+        "https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/mtxx.js",
+        "https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/zmzjz.js",
+        "https://raw.githubusercontent.com/89996462/Quantumult-X/main/ycdz/gear.js",
+        "https://raw.githubusercontent.com/sub-store-org/Sub-Store/master/config/QX.snippet"
     ],
     "task_local": [
         "https://raw.githubusercontent.com/KOP-XIAO/QuantumultX/master/Scripts/streaming-ui-check.js",
-        # 省略其他链接...
+        "https://raw.githubusercontent.com/evilbutcher/Quantumult_X/master/check_in/ssq/ssq.js",
+        "https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.js",
+        "https://github.com/sub-store-org/Sub-Store/releases/latest/download/cron-sync-artifacts.min.js"
     ],
     "misc": [
         "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb",
@@ -39,19 +68,23 @@ file_links = {
     ]
 }
 
+print("Tencent COS Configuration:")
+print(f"Secret ID: {secret_id}")
+print(f"Region: {region}")
+print(f"Bucket: {bucket}")
+
 for folder, links in file_links.items():
-    # 创建文件夹，如果不存在
     os.makedirs(folder, exist_ok=True)
     for link in links:
         try:
             file_name = link.split('/')[-1]
+            file_path = os.path.join(folder, file_name)
+            print(f"Downloading {link} to {file_path}")
             response = requests.get(link)
             if response.status_code == 200:
-                file_path = os.path.join(folder, file_name)
                 with open(file_path, 'wb') as file:
                     file.write(response.content)
                 print(f"Downloaded {file_path} successfully")
-                # 上传文件到腾讯云 COS
                 response = client.upload_file(
                     Bucket=bucket,
                     LocalFilePath=file_path,
