@@ -3,10 +3,16 @@ import requests
 from qcloud_cos import CosConfig
 from qcloud_cos import CosS3Client
 
+# 获取环境变量
 secret_id = os.getenv('TENCENT_SECRET_ID')
 secret_key = os.getenv('TENCENT_SECRET_KEY')
 region = os.getenv('TENCENT_REGION')
 bucket = os.getenv('TENCENT_BUCKET')
+
+print("Tencent COS Configuration:")
+print(f"Secret ID: {secret_id}")
+print(f"Region: {region}")
+print(f"Bucket: {bucket}")
 
 config = CosConfig(Region=region, SecretId=secret_id, SecretKey=secret_key)
 client = CosS3Client(config)
@@ -74,6 +80,7 @@ for folder, links in file_links.items():
             response = requests.get(link)
             if response.status_code == 200:
                 file_path = os.path.join(folder, file_name)
+                print(f"Downloading {link} to {file_path}")
                 with open(file_path, 'wb') as file:
                     file.write(response.content)
                 client.upload_file(
