@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
-        uses: actions/checkout@v4  # 确保使用最新版本
+        uses: actions/checkout@v4  # 使用 v4 版本以兼容 Node.js 20
 
       - name: Set up Python
-        uses: actions/setup-python@v4  # 确保使用最新版本
+        uses: actions/setup-python@v4  # 使用 v4 版本以兼容 Node.js 20
         with:
           python-version: '3.x'
 
