@@ -77,7 +77,8 @@ for folder, links in file_links.items():
     os.makedirs(folder, exist_ok=True)
     for link in links:
         try:
-            file_name = link.split('/')[-1]
+            # 使用部分链接路径作为文件名
+            file_name = link.replace("https://", "").replace("/", "_")
             file_path = os.path.join(folder, file_name)
             print(f"Downloading {link} to {file_path}")
             response = requests.get(link)
