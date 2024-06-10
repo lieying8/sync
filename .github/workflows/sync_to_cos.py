@@ -63,8 +63,7 @@ file_links = {
     ],
     "misc": [
         "https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb",
-        "https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb",
-        "https://static.itsnebula.net/apple/noota/17.mobileconfig"
+        "https://github.com/Hackl0us/GeoIP2-CN/raw/release/Country.mmdb"
     ]
 }
 
