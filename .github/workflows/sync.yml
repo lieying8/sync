@@ -4,7 +4,7 @@ name: Web Scraping
  #   workflow_dispatch:手动运行
 on: 
   schedule:
-    - cron: '*/5 * * * *' # 每5分钟运行
+    - cron: '0 0 * * *' # 每5分钟运行
 
 
 jobs:
