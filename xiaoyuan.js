@@ -4,46 +4,50 @@
  * 作者: Shang
  *******************************
 
+
+*****************************
+
 [rewrite_local]
 
-^https:\/\/xyks\.yuanfudao\.com\/leo-alchemy-account\/api\/vip\/user\/info\/v2 url script-response-body https://raw.githubusercontent.com/lieying8/sync/main/xiaoyuan.js
+^https:\/\/leo-online\.fbcontent\.cn\/api\/user\/info url script-response-body https://raw.githubusercontent.com/lieying8/sync/main/xiaoyuan.js
 
 [mitm]
 
-hostname = xyks.yuanfudao.com
+hostname = leo-online.fbcontent.cn
 
-*******************************/
+***************************/
 
-// Quantumult X 脚本
-var body = $response.body;
-var obj = JSON.parse(body);
+const target_host = "leo-online.fbcontent.cn"; // 目标域名
+const mock_vip_end_time = 1909660799999; // 2030-01-01 23:59:59
 
-// 设置 VIP 标识为 true
-obj.vipSymbol = true;
-
-// 修改 VIP 过期时间（2099-12-31）
-if (obj.userVIPInfo) {
-    obj.userVIPInfo.endTime = 4102444799000; // 2099-12-31
-}
-
-// 修改 VIP 课程权限
-if (obj.studyGroupRightInfo) {
-    obj.studyGroupRightInfo.rightStatus = 1;
-    obj.studyGroupRightInfo.rightEndTime = 4102444799000; // 2099-12-31
-}
-
-// 解锁 VIP 动画课
-if (obj.userMathAnimationEndTime !== undefined) {
-    obj.userMathAnimationEndTime = 4102444799000; // 2099-12-31
-}
-
-// 处理可能缺失的字段，避免 App 崩溃
-if (!obj.userVIPInfo) {
-    obj.userVIPInfo = {
-        "endTime": 4102444799000,  // 确保 VIP 过期时间
-        "createTime": 1741862056812, // 创建时间保持不变
-        "monthly": false
-    };
-}
-
-$done({body: JSON.stringify(obj)});
+$done({
+    response: {
+        status: 200, // 模拟成功响应
+        headers: {
+            "Content-Type": "application/json",
+            "X-Test-Env": "Sandbox" // 声明测试环境标识
+        },
+        body: JSON.stringify({
+            // ===== 核心测试字段 =====
+            vipSymbol: true,
+            grade: 3,
+            vipHistory: true,
+            userVIPInfo: {
+                endTime: mock_vip_end_time, // 修改VIP过期时间
+                createTime: 1741862056812, // 保持原始注册时间不变
+                monthly: false
+            },
+            
+            // ===== 异常场景模拟 =====
+            studyGroupRightInfo: {
+                rightStatus: 2, // 测试异常状态(0-正常 1-过期 2-未加入)
+                rightEndTime: 0
+            },
+            
+            // ===== 测试数据隔离 =====
+            name: "[TEST]猿宝92521", // 添加测试标识前缀
+            avatarUrl: "https://test.cdn/mock_avatar.png",
+            userMathAnimationEndTime: 0
+        }, null, 2)
+    }
+});
