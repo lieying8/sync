@@ -6,7 +6,7 @@
 
 [rewrite_local]
 
-^https:\/\/xyks\.yuanfudao\.com\/.*\/vip\/verify url script-response-body https://raw.githubusercontent.com/lieying8/sync/main/xiaoyuan.js
+^https:\/\/xyks\.yuanfudao\.com\/leo-star\/iphone\/exercise url script-response-body https://raw.githubusercontent.com/lieying8/sync/main/xiaoyuan.js
 
 [mitm]
 
