@@ -9,7 +9,7 @@
 
 [rewrite_local]
 
-^https:\/\/leo-online\.fbcontent\.cn\/api\/user\/info url script-response-body https://raw.githubusercontent.com/lieying8/sync/main/xiaoyuan.js
+^https:\/\/leo-online\.fbcontent\.cn\/api\/user\/info url script-response-body https://raw.githubusercontent.com/lieying8/sync/main/ceshi.js
 
 [mitm]
 
