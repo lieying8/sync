@@ -2,7 +2,7 @@
 import requests
 
 # 请求A网站的内容
-response = requests.get('https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2')
+response = requests.get('https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt')
 html_content = response.text
 
 # 创建一个保存到B网站的链接，使用WebDAV
