@@ -11,7 +11,7 @@
 
 [rewrite_local]
 
-^https:\/\/api\.revenuecat\.com\/v1\/subscribers\/ url script-response-body https://cp.6dsa.com/pip-v0.1.js
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers\/ url script-response-body https://raw.githubusercontent.com/lieying8/sync/main/ceshi.js
 
 [mitm]
 
