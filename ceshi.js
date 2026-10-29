@@ -1,53 +1,56 @@
-/*******************************
- * 小猿 AI VIP 永久解锁
- * 适用于 Quantumult X
- * 作者: Shang
- *******************************
 
+/******************************
 
-*****************************
+脚本名称：PiP Translate
+脚本功能：RevenueCat 会员接口测试
+脚本版本：v0.1
+适用工具：Quantumult X
+测试目标：验证会员响应是否可以被重写
+
+******************************
 
 [rewrite_local]
 
-^https:\/\/leo-online\.fbcontent\.cn\/api\/user\/info url script-response-body https://raw.githubusercontent.com/lieying8/sync/main/ceshi.js
+^https:\/\/api\.revenuecat\.com\/v1\/subscribers\/ url script-response-body https://cp.6dsa.com/pip-v0.1.js
 
 [mitm]
 
-hostname = leo-online.fbcontent.cn
+hostname = api.revenuecat.com
 
-***************************/
+******************************/
 
-const target_host = "leo-online.fbcontent.cn"; // 目标域名
-const mock_vip_end_time = 1909660799999; // 2030-01-01 23:59:59
 
-$done({
-    response: {
-        status: 200, // 模拟成功响应
-        headers: {
-            "Content-Type": "application/json",
-            "X-Test-Env": "Sandbox" // 声明测试环境标识
-        },
-        body: JSON.stringify({
-            // ===== 核心测试字段 =====
-            vipSymbol: true,
-            grade: 3,
-            vipHistory: true,
-            userVIPInfo: {
-                endTime: mock_vip_end_time, // 修改VIP过期时间
-                createTime: 1741862056812, // 保持原始注册时间不变
-                monthly: false
-            },
-            
-            // ===== 异常场景模拟 =====
-            studyGroupRightInfo: {
-                rightStatus: 2, // 测试异常状态(0-正常 1-过期 2-未加入)
-                rightEndTime: 0
-            },
-            
-            // ===== 测试数据隔离 =====
-            name: "[TEST]猿宝92521", // 添加测试标识前缀
-            avatarUrl: "https://test.cdn/mock_avatar.png",
-            userMathAnimationEndTime: 0
-        }, null, 2)
+// PiP Translate v0.1
+// JavaScript 响应测试代码
+
+var body = $response.body;
+
+try {
+    var objc = JSON.parse(body);
+
+    console.log("PiP Translate 接口命中");
+
+    if (objc.subscriber) {
+        console.log("会员字段读取成功");
+
+        var entitlements =
+            objc.subscriber.entitlements || {};
+
+        console.log(
+            "权益名称：" +
+            Object.keys(entitlements).join(", ")
+        );
+
+        $notify(
+            "PiP Translate v0.1",
+            "会员接口测试成功",
+            "已成功读取 RevenueCat 响应"
+        );
     }
-});
+
+    $done({body: JSON.stringify(objc)});
+
+} catch (e) {
+    console.log("接口响应无法解析：" + e);
+    $done({body: body});
+}
